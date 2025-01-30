@@ -4,7 +4,7 @@
 
 :root {
   --light-background: #ffffff;
-  --light-text: #000000;
+  --light-text: #121212;
   --dark-background: #121212;
   --dark-text: #ffffff;
 }
@@ -22,4 +22,25 @@ body {
 .light {
   --background-color: var(--light-background);
   --text-color: var(--light-text);
+}
+
+@layer base {
+  html,
+  body {
+    @apply font-montserrat;
+  }
+  h1,
+  h2 {
+    @apply text-4xl font-normal;
+  }
+
+  p {
+    @apply text-xl font-normal;
+  }
+}
+
+@layer components {
+  .container {
+    @apply w-[min(100%,1200px)] mx-auto grid grid-cols-2 lg:grid-cols-1;
+  }
 }
