@@ -22,10 +22,16 @@ export default {
           background: "#ffffff",
           text: "#000000",
         },
-        customPurple: "#260e50",
-        customTeal: "#264e70",
+        customPurple: "#381476",
+        customTeal: {
+          100: "#326896",
+          200: "#264e70",
+        },
+
+        customBlack: "#404040",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",

@@ -12,7 +12,7 @@ export default function ThemeToggle() {
   if (mounted) {
     return (
       <button
-        className={`text-2xl fixed bottom-2 right-2 p-2 rounded-full  duration-300 hover:scale-110 transition-all text-black hover:text-red-600 dark:text-white dark:hover:text-gray-300 `}
+        className={`text-2xl fixed bottom-2 left-2 p-2 rounded-full  duration-300 hover:scale-110 transition-all text-black hover:text-red-600 dark:text-white dark:hover:text-gray-300 `}
         onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
       >
         {resolvedTheme === "dark" ? <FiSun /> : <FiMoon />}
